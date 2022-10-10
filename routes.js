@@ -1,5 +1,3 @@
-const host
-
 document.addEventListener("click", (event) => {
   const { target } = event;
   if (!target.matches("a[nav]")) return;
