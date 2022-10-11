@@ -1,0 +1,61 @@
+.navigation {
+  --nav-height: 3rem;
+  --nav-link-padding: 0.7rem;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: var(--nav-height);
+}
+
+.navigation ul li a {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.navigation ul li a {
+  font-size: calc((var(--nav-height) - var(--nav-link-padding)) / 2);
+  padding: var(--nav-link-padding);
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.navigation ul li a:hover {
+  background-color: rgb(56, 50, 50);
+}
+
+.navigation ul li a[active] {
+  background-color: rgb(173, 33, 168);
+}
+
+.navigation ul li:last-child {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(59, 57, 57);
+  right: 0;
+  top: 0;
+  right: -2.5rem;
+  top: -2.5rem;
+  transform: rotate(45deg);
+  transition: transform 0.4s ease-out;
+}
+
+.navigation ul li:last-child a {
+  position: absolute;
+  bottom: -5%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.navigation ul li:last-child a:hover {
+  background-color: initial;
+}
+
+.navigation ul li:last-child:hover {
+  transform: rotate(45deg) scale(1.2);
+}
