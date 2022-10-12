@@ -1,6 +1,13 @@
-.navigation {
+:root {
   --nav-height: 3rem;
   --nav-link-padding: 0.7rem;
+}
+
+.navigation {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .navigation ul {

@@ -16,6 +16,8 @@ body {
 body {
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
+  padding-top: 5rem;
 }
 
 * {
@@ -32,6 +34,7 @@ body {
   margin: auto;
   margin-top: 2rem;
   background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 0.8rem;
   padding: 2rem 5rem;
 }
 
