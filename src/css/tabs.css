@@ -1,12 +1,10 @@
-:root {
+.tabs {
   --tab-width: 8rem;
   --tab-height: 2rem;
   --primary-color: rgb(24, 24, 62);
   --secondary-color: rgb(70, 180, 232);
   --animation-duration: 0.15s;
-}
 
-.tabs {
   background-color: var(--primary-color);
   display: flex;
   justify-content: center;

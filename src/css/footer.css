@@ -1,0 +1,9 @@
+footer {
+  --footer-height: 5rem;
+
+  position: relative;
+  clear: both;
+  margin-top: calc(var(--footer-height) / 2); 
+  height: var(--footer-height);
+  padding: 1rem 10%;  
+}

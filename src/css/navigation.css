@@ -1,13 +1,13 @@
-:root {
+.navigation {
   --nav-height: 3rem;
   --nav-link-padding: 0.7rem;
-}
+  --nav-transition-duration: 0.4s;
 
-.navigation {
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
+  clear: both;
+  height: var(--nav-height);
+  margin-bottom: calc(var(--nav-height) / 2);
 }
 
 .navigation ul {
@@ -43,28 +43,29 @@
 
 .navigation ul li:last-child {
   float: right;
-  width: 5rem;
-  height: 5rem;
-  background-color: rgb(59, 57, 57);
   right: 0;
   top: 0;
-  right: -2.5rem;
-  top: -2.5rem;
-  transform: rotate(45deg) translate(0, -70%);
-  transition: transform 0.4s ease-out;
+  transition: var(--nav-transition-duration) ease-in-out;
+  width: 50px;
+  height: 50px;
 }
 
-.navigation ul li:last-child a {
-  position: absolute;
-  bottom: -5%;
-  left: 50%;
-  transform: translate(-50%);
+.navigation ul li:last-child:hover {
+  width: 75px;
+  height: 75px;
 }
 
 .navigation ul li:last-child a:hover {
   background-color: initial;
 }
 
-.navigation ul li:last-child:hover {
-  transform: rotate(45deg) translate(0, -70%) scale(1.2);
+.navigation ul li:last-child a {
+  width: inherit;
+  height: inherit;
+  padding: 0;
+}
+
+.navigation ul li:last-child img {
+  width: inherit;
+  height: inherit;
 }

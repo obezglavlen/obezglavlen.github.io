@@ -1,5 +1,4 @@
 import { appendNavigation, appendFooter } from "./appendTemplates.js";
-import { routes } from "./constants.js";
 
 const body = document.querySelector("body");
 let location = `/${document.location.pathname.split("/")[1]}`;
