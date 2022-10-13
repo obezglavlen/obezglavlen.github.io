@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import './styles.scss';
 
 const NavBar = ({ items, direction, children }) => {
-
+  // TODO: maybe do slider tabs
   const renderItem = (item, index) => {
     return (
       <NavBarItem key={index} to={item.to} title={item.title} icon={item.icon}/>
