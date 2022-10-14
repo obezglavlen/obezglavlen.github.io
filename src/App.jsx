@@ -1,5 +1,5 @@
 import NavBar from './components/NavBar';
-import { Route, Routes } from 'react-router-dom';
+import {Route, Routes} from 'react-router-dom';
 import Home from './pages/home';
 import Downloads from './pages/downloads';
 
@@ -25,15 +25,15 @@ const App = () => (
   <>
     <NavBar items={navItems}>
       <a href='https://github.com/obezglavlen' target='_blank' rel='noreferrer'>
-        <img src='/assets/img/github_mark.svg' alt='github' />
+        <img src='/assets/img/github_mark.svg' alt='github'/>
       </a>
     </NavBar>
     <main>
       <Routes>
         <Route path='/'>
-          <Route index element={<Home />} />
-          <Route path='downloads/*' element={<Downloads />} />
-          <Route path='2' element={<div>Abiba</div>} />
+          <Route index element={<Home/>}/>
+          <Route path='downloads/*' element={<Downloads/>}/>
+          <Route path='2' element={<div>Abiba</div>}/>
         </Route>
       </Routes>
     </main>

@@ -1,0 +1,41 @@
+.tab-bar {
+  --transition-duration: 0.4s;
+
+  background-color: rgb(var(--additional-color));
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  padding: 0.3rem;
+
+  & * {
+    z-index: 2;
+  }
+
+  &__item {
+    width: 6rem;
+    height: 2rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &__link {
+      text-decoration: none;
+    }
+  }
+
+  &__glider {
+    z-index: 1;
+    width: 6rem;
+    height: 2rem;
+    position: absolute;
+    transition: transform var(--transition-duration) ease-in-out;
+    background-color: rgb(var(--secondary-color));
+    border-radius: 20px;
+  }
+}
