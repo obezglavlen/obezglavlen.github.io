@@ -2,28 +2,28 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 
-const TabBarItem = ({title, id, checked, onChange}) => {
+const TabBar = ({title, to, checked, onChange}) => {
   return (
     <>
       <input
-        type='radio'
-        name='tabs'
-        id={id}
+        type="radio"
+        name="tabs"
+        id={to}
         onChange={onChange}
         checked={checked}
         style={{display: 'none'}}
       />
-      <Link to={id} onClick={onChange} className='tab-bar__item__link'><label className='tab-bar__item'
-                                                                              htmlFor={id}>{title}</label></Link>
+      <Link to={to} onClick={onChange} className="tab-bar__item__link"><label className="tab-bar__item"
+                                                                              htmlFor={to}>{title}</label></Link>
     </>
   );
 };
 
-TabBarItem.propTypes = {
+TabBar.propTypes = {
   title: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
+  to: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   checked: PropTypes.bool,
 };
 
-export default TabBarItem;
+export default TabBar;

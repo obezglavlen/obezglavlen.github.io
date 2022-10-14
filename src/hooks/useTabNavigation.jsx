@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import PropTypes from 'prop-types';
 
 const useTabNavigation = (items) => {
   const [selected, setSelected] = useState(0);
@@ -14,11 +15,19 @@ const useTabNavigation = (items) => {
 
   const selectByIndex = (idx) => setSelected(idx);
 
+  const selectByPath = (path) => setSelected(items.findIndex(item => item.path === path));
+
   const getSelected = () => {
     return [items[selected], selected];
   };
 
-  return {selected: getSelected(), selectNext, selectPrev, selectByIndex};
+  return {selected: getSelected(), selectNext, selectPrev, selectByIndex, selectByPath};
 };
+
+useTabNavigation.propTypes = {
+  title: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+};
+
 
 export default useTabNavigation;

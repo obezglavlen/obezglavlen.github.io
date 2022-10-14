@@ -30,6 +30,11 @@ body,
   background-color: rgb(var(--primary-color));
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
 main {
   width: 60%;
   min-height: 75%;

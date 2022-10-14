@@ -12,7 +12,7 @@ const NavBar = ({items, direction, children}) => {
   };
 
   return (
-    <nav className='navigation'>
+    <nav className="navigation">
       <ul
         className={`navigation__list ${
           direction === 'column' ? 'navigation__list__column' : ''

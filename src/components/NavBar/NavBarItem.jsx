@@ -14,7 +14,7 @@ const NavBarItem = ({to, title, icon}) => {
         }
         onClick={() => document.title = title}
       >
-        {title}{" "}
+        {title}{' '}
         {icon && <i className={icon}></i>}
       </NavLink>
     </li>
