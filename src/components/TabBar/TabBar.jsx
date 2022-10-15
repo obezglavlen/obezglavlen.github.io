@@ -9,12 +9,13 @@ const TabBar = ({items}) => {
   const {selected, selectByPath, selectByIndex} = useTabNavigation(items);
   const location = useLocation();
 
+
   useEffect(() => {
-    const path = location.pathname.split('/')[2];
+    const path = location.pathname.split('/').at(-1);
 
     if (path) selectByPath(path);
     else selectByIndex(0);
-  }, []);
+  }, [location.pathname, selectByIndex, selectByPath]);
 
   const getXOffset = () => {
     const mid = items.length / 2;

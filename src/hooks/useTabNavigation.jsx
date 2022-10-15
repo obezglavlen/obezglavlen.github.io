@@ -15,7 +15,11 @@ const useTabNavigation = (items) => {
 
   const selectByIndex = (idx) => setSelected(idx);
 
-  const selectByPath = (path) => setSelected(items.findIndex(item => item.path === path));
+  const selectByPath = (path) => setSelected(() => {
+    const index = items.findIndex(item => item.path === path);
+    if (index < 0) return 0;
+    return index;
+  });
 
   const getSelected = () => {
     return [items[selected], selected];

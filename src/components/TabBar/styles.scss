@@ -1,7 +1,9 @@
+@import '../../constants';
+
 .tab-bar {
   --transition-duration: 0.4s;
 
-  background-color: rgb(var(--additional-color));
+  background-color: rgb($additional-color);
   border-radius: 20px;
   position: relative;
   display: flex;
@@ -9,16 +11,16 @@
   align-items: center;
   justify-self: center;
   align-self: center;
-  padding: 0.3rem;
-  margin-top: 2rem;
+  padding: 0.3em;
+  margin-top: 2em;
 
   & * {
     z-index: 2;
   }
 
   &__item {
-    width: 6rem;
-    height: 2rem;
+    width: 6em;
+    height: 2em;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -32,11 +34,11 @@
 
   &__glider {
     z-index: 1;
-    width: 6rem;
-    height: 2rem;
+    width: 6em;
+    height: 2em;
     position: absolute;
     transition: transform var(--transition-duration) ease-in-out;
-    background-color: rgb(var(--secondary-color));
+    background-color: rgb($secondary-color);
     border-radius: 20px;
   }
 }
