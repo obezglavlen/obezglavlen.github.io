@@ -2,6 +2,7 @@
 
 .downloads {
   &__item {
+    position: relative;
     padding: 0.8em;
     width: 12em;
     overflow: hidden;
@@ -9,6 +10,7 @@
     cursor: pointer;
 
     background-color: rgb($primary-color);
+
 
     &:hover {
       transform: scale(1.03);
@@ -24,10 +26,13 @@
     }
 
     &__header {
-      margin: 0.3em;
+      margin: 0.3em 0;
       text-align: center;
       font-size: 1.2em;
+      display: block;
+      width: 100%;
     }
+
     &__description {
       text-align: center;
       display: -webkit-box;
@@ -35,6 +40,34 @@
       text-overflow: ellipsis;
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
+    }
+
+    &__share {
+      width: 1em;
+      height: 1em;
+      display: block;
+      color: white;
+      margin-left: auto;
+      margin-top: 0.5em;
+    }
+
+    @media screen and (max-width: $sm) {
+      flex: 1;
+      width: auto;
+
+      &__header {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 1.5em;
+
+        transform: translate(-50%, -150%);
+      }
+
+      &__description {
+        display: none;
+      }
+      //width: 6em;
     }
   }
 }

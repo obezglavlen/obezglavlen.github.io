@@ -30,6 +30,7 @@
     "@testing-library/user-event": "^13.5.0",
     "babel-plugin-named-exports-order": "^0.0.2",
     "eslint": "^8.25.0",
+    "eslint-plugin-react": "^7.31.10",
     "gh-pages": "^4.0.0",
     "webpack": "^5.74.0"
   },
@@ -37,6 +38,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
+    "prebuild": "eslint --fix",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

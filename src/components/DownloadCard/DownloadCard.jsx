@@ -24,6 +24,12 @@ const DownloadCard = ({title, img, description, externalUrl, internalUrl, onClic
     return <p className={'downloads__item__description'}>{description}</p>;
   };
 
+  const renderShare = () => {
+    if (!externalUrl) return null;
+
+    return <i className={'fa fa-share downloads__item__share'}></i>;
+  };
+
   const handleClick = () => {
     if (!__DEV__) {
       if (!internalUrl) return null;
@@ -42,6 +48,7 @@ const DownloadCard = ({title, img, description, externalUrl, internalUrl, onClic
         {title}
       </h1>
       {renderDescription()}
+      {renderShare()}
     </article>
   );
 };

@@ -34,6 +34,7 @@ NavBar.propTypes = {
     })
   ).isRequired,
   direction: PropTypes.oneOf(['row', 'column']),
+  children: PropTypes.any,
 };
 
 NavBar.defaultProps = {
