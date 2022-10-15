@@ -1,8 +1,7 @@
 @import "../../constants";
 
 .navigation {
-  --nav-item-padding: 1em;
-  --min-item-width: 6em;
+  $nav-item-padding: 1em;
 
   width: 100%;
   background-color: transparent;
@@ -15,23 +14,25 @@
     justify-content: flex-start;
 
     &__item {
+      transition: background-color 0.1s ease-in-out;
+
       &__active {
         background-color: $accent-color;
-        box-shadow: inset 0 2px $additional-color;
       }
 
       &:hover {
-        background-color: $accent-color;
+        background-color: rgba($accent-color, 0.4);
       }
 
       & a {
         text-align: center;
         display: flex;
-        padding: var(--nav-item-padding);
+        padding: $nav-item-padding;
         text-decoration: none;
         color: white;
         justify-content: center;
         align-items: center;
+        gap: 0.3em;
       }
     }
 

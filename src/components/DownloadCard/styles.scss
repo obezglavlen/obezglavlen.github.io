@@ -26,7 +26,7 @@
     cursor: pointer;
     border-radius: 5px;
 
-    background-color: rgba($additional-color, 0.4);
+    background-color: rgba($accent-color, 0.4);
 
 
     &:hover {
@@ -73,7 +73,6 @@
     }
 
     @media screen and (max-width: $sm) {
-      //flex: 1 !important;
       flex-basis: unset !important;
       width: auto;
 
@@ -93,7 +92,6 @@
       &__description {
         display: none;
       }
-      //width: 6em;
     }
   }
 }

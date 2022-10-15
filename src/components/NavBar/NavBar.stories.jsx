@@ -4,7 +4,7 @@ const navItems = [
   {
     title: 'Home',
     to: '/',
-    icon: 'fa fa-Home',
+    icon: 'fa fa-home',
   },
   {
     title: 'Downloads',
@@ -24,3 +24,5 @@ export default {
 };
 
 export const NavBarStory = () => <NavBar items={navItems}/>;
+
+export const NavBarVertical = () => <NavBar items={navItems} direction={'column'}/>;

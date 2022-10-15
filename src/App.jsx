@@ -7,7 +7,7 @@ const navItems = [
   {
     title: 'Home',
     to: '/',
-    icon: 'fa fa-Home',
+    icon: 'fa fa-home',
   },
   {
     title: 'Downloads',
