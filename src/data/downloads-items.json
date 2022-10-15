@@ -3,43 +3,41 @@
     {
       "title": "Example title",
       "description": "Proin hendrerit a sem efficitur sollicitudin. Aenean maximus enim enim, quis facilisis nunc placerat.",
-      "img": "https://via.placeholder.com/350/4c2b55",
+      "img": "https://via.placeholder.com/350/2A1430",
       "externalUrl": "https://github.com/obezglavlen"
     },
     {
       "title": "Example title",
       "description": "Proin hendrerit a sem efficitur sollicitudin. Aenean maximus enim enim, quis facilisis nunc placerat.",
-      "img": "https://via.placeholder.com/350/4c2b55",
+      "img": "https://via.placeholder.com/350/2A1430",
       "externalUrl": "https://github.com/obezglavlen"
     },
     {
       "title": "Example title",
       "description": "Proin hendrerit a sem efficitur sollicitudin. Aenean maximus enim enim, quis facilisis nunc placerat.",
-      "img": "https://via.placeholder.com/350/4c2b55",
+      "img": "https://via.placeholder.com/350/2A1430",
+      "externalUrl": "https://github.com/obezglavlen"
+    },
+    {
+      "title": "Example title no image",
+      "description": "Proin hendrerit a sem efficitur sollicitudin. Aenean maximus enim enim, quis facilisis nunc placerat.",
+      "externalUrl": "https://github.com/obezglavlen"
+    },
+    {
+      "title": "Example title no image",
+      "description": "Proin hendrerit a sem efficitur sollicitudin. Aenean maximus enim enim, quis facilisis nunc placerat.",
       "externalUrl": "https://github.com/obezglavlen"
     },
     {
       "title": "Example title",
       "description": "Proin hendrerit a sem efficitur sollicitudin. Aenean maximus enim enim, quis facilisis nunc placerat.",
-      "img": "https://via.placeholder.com/350/4c2b55",
+      "img": "https://via.placeholder.com/350/2A1430",
       "externalUrl": "https://github.com/obezglavlen"
     },
     {
       "title": "Example title",
       "description": "Proin hendrerit a sem efficitur sollicitudin. Aenean maximus enim enim, quis facilisis nunc placerat.",
-      "img": "https://via.placeholder.com/350/4c2b55",
-      "externalUrl": "https://github.com/obezglavlen"
-    },
-    {
-      "title": "Example title",
-      "description": "Proin hendrerit a sem efficitur sollicitudin. Aenean maximus enim enim, quis facilisis nunc placerat.",
-      "img": "https://via.placeholder.com/350/4c2b55",
-      "externalUrl": "https://github.com/obezglavlen"
-    },
-    {
-      "title": "Example title",
-      "description": "Proin hendrerit a sem efficitur sollicitudin. Aenean maximus enim enim, quis facilisis nunc placerat.",
-      "img": "https://via.placeholder.com/350/4c2b55",
+      "img": "https://via.placeholder.com/350/2A1430",
       "externalUrl": "https://github.com/obezglavlen"
     }
   ]

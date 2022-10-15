@@ -6,14 +6,14 @@ export default {
 
 export const DownloadCardStory = () => <DownloadCard title={'Example card'}
                                                      description={'Loem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, enim?'}
-                                                     img={'https://via.placeholder.com/350/4c2b55'}
+                                                     img={'https://via.placeholder.com/350/2A1430'}
                                                      externalUrl={'https://github.com/obezglavlen'}
                                                      onClick={() => console.log('Clicked download item')}/>;
 
 export const DownloadCardWithinWrapper = () => <main>
   <DownloadCard title={'Example card'}
                 description={'Loem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, enim?'}
-                img={'https://via.placeholder.com/350/4c2b55'}
+                img={'https://via.placeholder.com/350/2A1430'}
                 externalUrl={'https://github.com/obezglavlen'}
                 onClick={() => console.log('Clicked download item')}/>
 </main>;
@@ -22,35 +22,35 @@ export const MultipleDownloadCardsWithinWrapper = () => <main>
   <DownloadCardsWrapper>
     <DownloadCard title={'Example card'}
                   description={'Loem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, enim?'}
-                  img={'https://via.placeholder.com/350/4c2b55'}
+                  img={'https://via.placeholder.com/350/2A1430'}
                   externalUrl={'https://github.com/obezglavlen'}
                   onClick={() => console.log('Clicked download item')}/>
     <DownloadCard title={'Example card'}
                   description={'Loem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, enim?'}
-                  img={'https://via.placeholder.com/350/4c2b55'}
+                  img={'https://via.placeholder.com/350/2A1430'}
                   externalUrl={'https://github.com/obezglavlen'}
                   onClick={() => console.log('Clicked download item')}/>
     <DownloadCard title={'Example card'}
                   description={'Loem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, enim?'}
-                  img={'https://via.placeholder.com/350/4c2b55'}
+                  img={'https://via.placeholder.com/350/2A1430'}
                   externalUrl={'https://github.com/obezglavlen'}
                   onClick={() => console.log('Clicked download item')}/><DownloadCard title={'Example card'}
                                                                                       description={'Loem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, enim?'}
-                                                                                      img={'https://via.placeholder.com/350/4c2b55'}
+                                                                                      img={'https://via.placeholder.com/350/2A1430'}
                                                                                       externalUrl={'https://github.com/obezglavlen'}
                                                                                       onClick={() => console.log('Clicked download item')}/><DownloadCard
     title={'Example card'}
     description={'Loem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, enim?'}
-    img={'https://via.placeholder.com/350/4c2b55'}
+    img={'https://via.placeholder.com/350/2A1430'}
     externalUrl={'https://github.com/obezglavlen'}
     onClick={() => console.log('Clicked download item')}/><DownloadCard title={'Example card'}
                                                                         description={'Loem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, enim?'}
-                                                                        img={'https://via.placeholder.com/350/4c2b55'}
+                                                                        img={'https://via.placeholder.com/350/2A1430'}
                                                                         externalUrl={'https://github.com/obezglavlen'}
                                                                         onClick={() => console.log('Clicked download item')}/><DownloadCard
     title={'Example card'}
     description={'Loem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, enim?'}
-    img={'https://via.placeholder.com/350/4c2b55'}
+    img={'https://via.placeholder.com/350/2A1430'}
     externalUrl={'https://github.com/obezglavlen'}
     onClick={() => console.log('Clicked download item')}/>
   </DownloadCardsWrapper>
