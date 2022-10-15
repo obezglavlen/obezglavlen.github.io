@@ -1,27 +1,53 @@
 import React from 'react';
-import TabBar from '../../components/TabBar/TabBar';
+import items from '../../data/downloads-items.json';
 import {Navigate, useRoutes} from 'react-router-dom';
+import TabBar from '../../components/TabBar';
+import DownloadCard, {DownloadCardsWrapper} from '../../components/DownloadCard';
 
 const routes = [
   {
     title: 'Page one',
     path: 'minecraft',
-    element: <div>minecraft</div>
+    element: <DownloadCardsWrapper>
+      {items.items.map(({title, description, img, externalUrl}, index) => <DownloadCard title={title}
+                                                                                        description={description}
+                                                                                        img={img}
+                                                                                        externalUrl={externalUrl}
+                                                                                        key={index}/>)}
+    </DownloadCardsWrapper>
   },
   {
     title: 'Page two',
     path: 'windows',
-    element: <div>windows</div>
+    element: <DownloadCardsWrapper>
+      {items.items.map(({title, description, img, externalUrl}, index) => <DownloadCard title={title}
+                                                                                        description={description}
+                                                                                        img={img}
+                                                                                        externalUrl={externalUrl}
+                                                                                        key={index}/>)}
+    </DownloadCardsWrapper>
   },
   {
     title: 'Page three',
     path: 'android',
-    element: <div>android</div>
+    element: <DownloadCardsWrapper>
+      {items.items.map(({title, description, img, externalUrl}, index) => <DownloadCard title={title}
+                                                                                        description={description}
+                                                                                        img={img}
+                                                                                        externalUrl={externalUrl}
+                                                                                        key={index}/>)}
+    </DownloadCardsWrapper>
   },
   {
     title: 'Page hui',
     path: 'hui',
-    element: <div>hui</div>
+    element: <DownloadCardsWrapper>
+      {items.items.map(({title, description, img, externalUrl}, index) => <DownloadCard title={title}
+                                                                                        description={description}
+                                                                                        img={img}
+                                                                                        externalUrl={externalUrl}
+                                                                                        key={index}/>)}
+    </DownloadCardsWrapper>
   },
 ];
 

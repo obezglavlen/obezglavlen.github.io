@@ -3,7 +3,7 @@
 .tab-bar {
   --transition-duration: 0.4s;
 
-  background-color: rgb($additional-color);
+  background-color: $additional-color;
   border-radius: 20px;
   position: relative;
   display: flex;
@@ -38,7 +38,7 @@
     height: 2em;
     position: absolute;
     transition: transform var(--transition-duration) ease-in-out;
-    background-color: rgb($secondary-color);
+    background-color: $secondary-color;
     border-radius: 20px;
   }
 }

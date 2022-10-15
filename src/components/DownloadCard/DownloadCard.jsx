@@ -27,7 +27,7 @@ const DownloadCard = ({title, img, description, externalUrl, internalUrl, onClic
   const renderShare = () => {
     if (!externalUrl) return null;
 
-    return <i className={'fa fa-share downloads__item__share'}></i>;
+    return <a href={externalUrl} className={'downloads__item__share'}><i className={'fa fa-share'}></i></a>;
   };
 
   const handleClick = () => {

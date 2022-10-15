@@ -27,7 +27,7 @@ body,
   width: 100%;
   overflow-x: hidden;
   position: relative;
-  background-color: rgb($primary-color);
+  background-color: $primary-color;
 }
 
 #root {
@@ -37,10 +37,9 @@ body,
 
 main {
   width: 60%;
-  min-height: 75%;
   display: flex;
   flex-direction: column;
-  background-color: rgb($secondary-color);
+  background-color: $secondary-color;
   border-radius: 10px;
   margin: 3em auto auto;
   padding: 1em;

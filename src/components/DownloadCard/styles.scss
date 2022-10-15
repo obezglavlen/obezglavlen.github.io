@@ -1,6 +1,22 @@
 @import '../../constants';
 
 .downloads {
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1em 0;
+
+    & > .downloads__item {
+      flex-basis: 30%;
+    }
+
+    @media screen and (max-width: $sm) {
+      flex-direction: column;
+    }
+  }
+
   &__item {
     position: relative;
     padding: 0.8em;
@@ -8,8 +24,9 @@
     overflow: hidden;
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
+    border-radius: 5px;
 
-    background-color: rgb($primary-color);
+    background-color: rgba($additional-color, 0.4);
 
 
     &:hover {
@@ -49,19 +66,28 @@
       color: white;
       margin-left: auto;
       margin-top: 0.5em;
+
+      &:hover {
+        animation: rotate360 0.4s;
+      }
     }
 
     @media screen and (max-width: $sm) {
-      flex: 1;
+      //flex: 1 !important;
+      flex-basis: unset !important;
       width: auto;
 
-      &__header {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        font-size: 1.5em;
+      &__image {
+        & ~ .downloads__item__header {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -150%);
+        }
+      }
 
-        transform: translate(-50%, -150%);
+      &__header {
+        font-size: 1.5em;
       }
 
       &__description {
@@ -69,5 +95,17 @@
       }
       //width: 6em;
     }
+  }
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0);
+  }
+  99% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0)
   }
 }
