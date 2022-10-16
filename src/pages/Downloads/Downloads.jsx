@@ -27,6 +27,7 @@ const Downloads = () => {
           description={item.description}
           img={item.img}
           externalUrl={item.externalUrl}
+          internalUrl={item.internalUrl}
           key={index}
         />)}
       </DownloadCardsWrapper>

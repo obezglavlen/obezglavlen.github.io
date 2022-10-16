@@ -13,8 +13,9 @@ const TabBar = ({title, to, checked, onChange}) => {
         checked={checked}
         style={{display: 'none'}}
       />
-      <Link to={to} onClick={onChange} className="tab-bar__item__link"><label className="tab-bar__item"
-                                                                              htmlFor={to}>{title}</label></Link>
+      <Link to={to} onClick={onChange} className="tab-bar__item__link"><label
+        className="tab-bar__item"
+        htmlFor={to}>{title}</label></Link>
     </>
   );
 };

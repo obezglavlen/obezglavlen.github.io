@@ -24,7 +24,8 @@ const navItems = [
 const App = () => (
   <>
     <NavBar items={navItems}>
-      <a href="https://github.com/obezglavlen" target="_blank" rel="noreferrer">
+      <a href="https://github.com/obezglavlen" target="_blank"
+         rel="noreferrer">
         <img src="/assets/img/github_mark.svg" alt="github"/>
       </a>
     </NavBar>

@@ -25,7 +25,13 @@ const useTabNavigation = (items) => {
     return [items[selected], selected];
   };
 
-  return {selected: getSelected(), selectNext, selectPrev, selectByIndex, selectByPath};
+  return {
+    selected: getSelected(),
+    selectNext,
+    selectPrev,
+    selectByIndex,
+    selectByPath
+  };
 };
 
 useTabNavigation.propTypes = {

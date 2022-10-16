@@ -1,18 +1,20 @@
 @import '../../constants';
 
 .tab-bar {
-  --transition-duration: 0.4s;
+  $transition-duration: 0.4s;
+  $border-radius: 0px;
+  $skew-angle: 20deg;
 
   background-color: $accent-color;
-  border-radius: 20px;
+  border-radius: $border-radius;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   justify-self: center;
   align-self: center;
-  padding: 0.3em;
   margin-top: 2em;
+  transform: skew(-$skew-angle);
 
   & * {
     z-index: 2;
@@ -21,7 +23,7 @@
   &__item {
     width: 6em;
     height: 2em;
-    border-radius: 20px;
+    border-radius: $border-radius;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,6 +32,8 @@
     &__link {
       text-decoration: none;
       -webkit-tap-highlight-color: transparent;
+      border-radius: $border-radius;
+      transform: skew($skew-angle);
     }
   }
 
@@ -38,8 +42,7 @@
     width: 6em;
     height: 2em;
     position: absolute;
-    transition: transform var(--transition-duration) ease-in-out;
+    transition: transform $transition-duration ease-in-out;
     background-color: $secondary-color;
-    border-radius: 20px;
   }
 }

@@ -34,20 +34,22 @@ export const MultipleDownloadCardsWithinWrapper = () => <main>
                   description={'Loem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, enim?'}
                   img={'https://via.placeholder.com/350/2A1430'}
                   externalUrl={'https://github.com/obezglavlen'}
-                  onClick={() => console.log('Clicked download item')}/><DownloadCard title={'Example card'}
-                                                                                      description={'Loem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, enim?'}
-                                                                                      img={'https://via.placeholder.com/350/2A1430'}
-                                                                                      externalUrl={'https://github.com/obezglavlen'}
-                                                                                      onClick={() => console.log('Clicked download item')}/><DownloadCard
+                  onClick={() => console.log('Clicked download item')}/><DownloadCard
     title={'Example card'}
     description={'Loem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, enim?'}
     img={'https://via.placeholder.com/350/2A1430'}
     externalUrl={'https://github.com/obezglavlen'}
-    onClick={() => console.log('Clicked download item')}/><DownloadCard title={'Example card'}
-                                                                        description={'Loem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, enim?'}
-                                                                        img={'https://via.placeholder.com/350/2A1430'}
-                                                                        externalUrl={'https://github.com/obezglavlen'}
-                                                                        onClick={() => console.log('Clicked download item')}/><DownloadCard
+    onClick={() => console.log('Clicked download item')}/><DownloadCard
+    title={'Example card'}
+    description={'Loem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, enim?'}
+    img={'https://via.placeholder.com/350/2A1430'}
+    externalUrl={'https://github.com/obezglavlen'}
+    onClick={() => console.log('Clicked download item')}/><DownloadCard
+    title={'Example card'}
+    description={'Loem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, enim?'}
+    img={'https://via.placeholder.com/350/2A1430'}
+    externalUrl={'https://github.com/obezglavlen'}
+    onClick={() => console.log('Clicked download item')}/><DownloadCard
     title={'Example card'}
     description={'Loem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, enim?'}
     img={'https://via.placeholder.com/350/2A1430'}
@@ -56,9 +58,10 @@ export const MultipleDownloadCardsWithinWrapper = () => <main>
   </DownloadCardsWrapper>
 </main>;
 
-export const DownloadCardWithoutImage = () => <DownloadCard title={'Example card'}
-                                                            description={'Loem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, enim?'}
-                                                            onClick={() => console.log('Clicked download item')}/>;
+export const DownloadCardWithoutImage = () => <DownloadCard
+  title={'Example card'}
+  description={'Loem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, enim?'}
+  onClick={() => console.log('Clicked download item')}/>;
 
 export const DownloadCardWithoutImageWithinWrapper = () => <main>
   <DownloadCard title={'Example card'}

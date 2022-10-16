@@ -25,4 +25,5 @@ export default {
 
 export const NavBarStory = () => <NavBar items={navItems}/>;
 
-export const NavBarVertical = () => <NavBar items={navItems} direction={'column'}/>;
+export const NavBarVertical = () => <NavBar items={navItems}
+                                            direction={'column'}/>;

@@ -3,7 +3,14 @@ import PropTypes from 'prop-types';
 import {useNavigate} from 'react-router-dom';
 import './styles.scss';
 
-const DownloadCard = ({title, img, description, externalUrl, internalUrl, onClick}) => {
+const DownloadCard = ({
+                        title,
+                        img,
+                        description,
+                        externalUrl,
+                        internalUrl,
+                        onClick
+                      }) => {
   const navigate = useNavigate();
 
   if (__DEV__) {
@@ -15,7 +22,10 @@ const DownloadCard = ({title, img, description, externalUrl, internalUrl, onClic
   const renderImage = () => {
     if (!img) return null;
 
-    return <img src={img} alt={'card'} className={'downloads__item__image'}/>;
+    return <div className={'downloads__item__figure'}><img src={img}
+                                                           alt={'card'}
+                                                           className={'downloads__item__figure__image'}/>
+    </div>;
   };
 
   const renderDescription = () => {
@@ -27,7 +37,8 @@ const DownloadCard = ({title, img, description, externalUrl, internalUrl, onClic
   const renderShare = () => {
     if (!externalUrl) return null;
 
-    return <a href={externalUrl} className={'downloads__item__share'}><i className={'fa fa-share'}></i></a>;
+    return <a href={externalUrl} className={'downloads__item__share'}><i
+      className={'fa fa-share'}></i></a>;
   };
 
   const handleClick = () => {
@@ -37,7 +48,7 @@ const DownloadCard = ({title, img, description, externalUrl, internalUrl, onClic
 
     if (onClick) onClick();
 
-    return navigate(internalUrl);
+    return /http/.test(internalUrl) ? (window.location.href = internalUrl) : navigate(internalUrl);
   };
 
 
