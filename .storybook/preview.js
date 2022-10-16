@@ -1,4 +1,5 @@
 import {HashRouter} from 'react-router-dom';
+import '../src/styles.scss';
 
 export const parameters = {
   actions: {argTypesRegex: '^on[A-Z].*'},

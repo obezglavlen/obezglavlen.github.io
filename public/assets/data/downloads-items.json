@@ -1,0 +1,62 @@
+{
+  "minecraft": [
+    {
+      "title": "Example title",
+      "description": "Proin hendrerit a sem efficitur sollicitudin. Aenean maximus enim enim, quis facilisis nunc placerat.",
+      "img": "https://via.placeholder.com/350/2A1430",
+      "externalUrl": "https://github.com/obezglavlen"
+    },
+    {
+      "title": "Example title 2",
+      "description": "Well! Pieces o' greed are forever shiny. Oh, ye mighty seashell- set sails for endurance! Ho-ho-ho! life of power.",
+      "img": "https://via.placeholder.com/350/2A1430",
+      "externalUrl": "https://github.com/obezglavlen"
+    },
+    {
+      "title": "Example title 3",
+      "description": "C-beam of a ship-wide collision course, handle the metamorphosis! Shields up, assimilation! Where is the collective girl?",
+      "img": "https://via.placeholder.com/350/2A1430",
+      "externalUrl": "https://github.com/obezglavlen"
+    }
+  ],
+  "windows": [
+    {
+      "title": "Example title 1",
+      "description": "A falsis, nuclear vexatum iacere albus habena. Nunquam tractare victrix. Crescere semper ducunt ad raptus assimilatio.",
+      "img": "https://via.placeholder.com/350/2A1430",
+      "externalUrl": "https://github.com/obezglavlen"
+    },
+    {
+      "title": "Example title 2",
+      "description": "After crushing the gingers, decorate pumpkin seeds, lentils and white wine with it in a soup pot. Try grilling peanut butter mousse tossed with lime?",
+      "img": "https://via.placeholder.com/350/2A1430",
+      "externalUrl": "https://github.com/obezglavlen"
+    },
+    {
+      "title": "Example title 3",
+      "description": "Furners stutter from yellow fevers like coal-black sons. Cold, big gulls roughly raid a dark, fine sun? All scallywags crush weird, stormy cannibals.",
+      "img": "https://via.placeholder.com/350/2A1430",
+      "externalUrl": "https://github.com/obezglavlen"
+    },
+    {
+      "title": "Example title 4",
+      "description": "Bursa albus nuclear vexatum iacere est. Flavum, peritus domuss absolute aperto de fatalis, magnum vigil? Sainthood remembers when you invent with heaven.",
+      "img": "https://via.placeholder.com/350/2A1430",
+      "externalUrl": "https://github.com/obezglavlen"
+    }
+  ],
+  "android": [
+    {
+      "title": "Example title 1",
+      "description": "The monkey knows hypnosis which is not new. Apostolic dogmas receives most careers. Be ancient.",
+      "img": "https://via.placeholder.com/350/2A1430",
+      "externalUrl": "https://github.com/obezglavlen"
+    },
+    {
+      "title": "Example title 2",
+      "description": "Per guest prepare one package of maple syrup with heated shrimps for dessert. With broccolis drink gold tequila? Warp, scotty, peace!",
+      "img": "https://via.placeholder.com/350/2A1430",
+      "externalUrl": "https://github.com/obezglavlen"
+    }
+  ]
+}

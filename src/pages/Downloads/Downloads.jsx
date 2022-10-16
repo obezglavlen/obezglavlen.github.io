@@ -1,64 +1,52 @@
-import React from 'react';
-import items from '../../data/downloads-items.json';
+import React, {useEffect, useRef, useState} from 'react';
+import DownloadCard, {
+  DownloadCardsWrapper
+} from '../../components/DownloadCard';
 import {Navigate, useRoutes} from 'react-router-dom';
 import TabBar from '../../components/TabBar';
-import DownloadCard, {DownloadCardsWrapper} from '../../components/DownloadCard';
-
-const routes = [
-  {
-    title: 'Page one',
-    path: 'minecraft',
-    element: <DownloadCardsWrapper>
-      {items.items.map(({title, description, img, externalUrl}, index) => <DownloadCard title={title}
-                                                                                        description={description}
-                                                                                        img={img}
-                                                                                        externalUrl={externalUrl}
-                                                                                        key={index}/>)}
-    </DownloadCardsWrapper>
-  },
-  {
-    title: 'Page two',
-    path: 'windows',
-    element: <DownloadCardsWrapper>
-      {items.items.map(({title, description, img, externalUrl}, index) => <DownloadCard title={title}
-                                                                                        description={description}
-                                                                                        img={img}
-                                                                                        externalUrl={externalUrl}
-                                                                                        key={index}/>)}
-    </DownloadCardsWrapper>
-  },
-  {
-    title: 'Page three',
-    path: 'android',
-    element: <DownloadCardsWrapper>
-      {items.items.map(({title, description, img, externalUrl}, index) => <DownloadCard title={title}
-                                                                                        description={description}
-                                                                                        img={img}
-                                                                                        externalUrl={externalUrl}
-                                                                                        key={index}/>)}
-    </DownloadCardsWrapper>
-  },
-  {
-    title: 'Page hui',
-    path: 'hui',
-    element: <DownloadCardsWrapper>
-      {items.items.map(({title, description, img, externalUrl}, index) => <DownloadCard title={title}
-                                                                                        description={description}
-                                                                                        img={img}
-                                                                                        externalUrl={externalUrl}
-                                                                                        key={index}/>)}
-    </DownloadCardsWrapper>
-  },
-];
 
 const Downloads = () => {
-  const routeComponents = useRoutes([{
-    path: '/',
-    children: [{
-      index: true,
-      element: <Navigate to={routes[0].path}/>
-    }, ...routes]
-  }]);
+  const renderCount = useRef(0);
+  const [downloadItems, setDownloadItems] = useState({});
+
+  renderCount.current = renderCount.current + 1;
+
+  useEffect(() => {
+    fetch('/assets/data/downloads-items.json')
+      .then(response => response.json())
+      .then(data => setDownloadItems(data));
+  }, []);
+
+  const routes = Object.keys(downloadItems).map(key =>
+    ({
+      title: key.charAt(0).toUpperCase() + key.slice(1),
+      path: key,
+      element: <DownloadCardsWrapper>
+        {downloadItems[key].map((item, index) => <DownloadCard
+          title={item.title}
+          description={item.description}
+          img={item.img}
+          externalUrl={item.externalUrl}
+          key={index}
+        />)}
+      </DownloadCardsWrapper>
+    })
+  );
+
+  const routeComponents = useRoutes([
+    {
+      path: '/',
+      children: [
+        {
+          index: true,
+          element: renderCount.current > 1 ?
+            <Navigate to={routes[0].path}/> : null
+        },
+        ...routes
+      ]
+    },
+  ]);
+
 
   return (
     <>
