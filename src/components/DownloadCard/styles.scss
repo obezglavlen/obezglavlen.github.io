@@ -52,6 +52,10 @@
         &:hover {
           width: 110%;
         }
+
+        @media screen and (max-width: $sm) {
+          filter: blur(10px) drop-shadow(0 0 5em black);
+        }
       }
     }
 
@@ -61,6 +65,15 @@
       font-size: 1.2em;
       display: block;
       width: 100%;
+
+      @media screen and (max-width: $sm) {
+        font-size: 3em;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -75%);
+        word-break: break-word;
+      }
     }
 
     &__description {
@@ -97,10 +110,6 @@
           left: 50%;
           transform: translate(-50%, -150%);
         }
-      }
-
-      &__header {
-        font-size: 1.5em;
       }
 
       &__description {
