@@ -36,6 +36,7 @@ main {
   border-radius: 10px;
   margin: 3em auto auto;
   padding: 1em;
+  gap: 1em;
 
   @media screen and (max-width: $sm) {
     width: 100%;

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './styles.scss';
 
 const DownloadCard = ({
@@ -50,7 +50,6 @@ const DownloadCard = ({
 
     return /http/.test(internalUrl) ? (window.location.href = internalUrl) : navigate(internalUrl);
   };
-
 
   return (
     <article className={'downloads__item'} onClick={handleClick}>
