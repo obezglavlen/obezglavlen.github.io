@@ -1,4 +1,4 @@
-import DownloadCard, {DownloadCardsWrapper} from '../DownloadCard';
+import DownloadCard, { DownloadCardsWrapper } from '../DownloadCard';
 
 export default {
   title: 'DownloadCard', component: DownloadCard

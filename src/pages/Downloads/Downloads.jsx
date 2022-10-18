@@ -5,19 +5,17 @@ import DownloadCard, {
 import { Navigate, useRoutes } from 'react-router-dom';
 import TabBar from '../../components/TabBar';
 import SearchBar from '../../components/SearchBar';
+import PropTypes from 'prop-types';
 
-const Downloads = () => {
+const Downloads = ({ items, fetchDownloads }) => {
   const renderCount = useRef(0);
   const timer = useRef(null);
   const [search, setSearch] = useState('');
-  const [downloadItems, setDownloadItems] = useState({});
 
   renderCount.current = renderCount.current + 1;
 
   useEffect(() => {
-    fetch('/assets/data/downloads-items.json')
-      .then(response => response.json())
-      .then(data => setDownloadItems(data));
+    fetchDownloads && fetchDownloads();
   }, []);
 
   const handleSearchInput = (value) => {
@@ -29,12 +27,12 @@ const Downloads = () => {
   };
 
 
-  const routes = Object.keys(downloadItems).map(key => ({
+  const routes = Object.keys(items).map(key => ({
     title: key.charAt(0).toUpperCase() + key.slice(1),
     path: key,
     element: <DownloadCardsWrapper>
       {(() => {
-        const cards = downloadItems[key].filter((item) => item.title.toLowerCase().includes(search)).map((item, index) =>
+        const cards = items[key].filter((item) => item.title.toLowerCase().includes(search)).map((item, index) =>
           <DownloadCard
             title={item.title}
             description={item.description}
@@ -73,6 +71,11 @@ const Downloads = () => {
     </>
     // TODO
   );
+};
+
+Downloads.propTypes = {
+  items: PropTypes.object.isRequired,
+  fetchDownloads: PropTypes.func,
 };
 
 export default Downloads;

@@ -1,15 +1,15 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 
-const NavBarItem = ({to, title, icon}) => {
+const NavBarItem = ({ to, title, icon }) => {
   return (
     <li className={'navigation__list__item'}>
       <NavLink
         to={to}
         end={to === '/'}
-        className={({isActive}) =>
+        className={({ isActive }) =>
           isActive ? 'navigation__list__item__active' : ''
         }
         onClick={() => document.title = title}

@@ -1,9 +1,8 @@
-import {HashRouter, useNavigate} from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import '../src/styles.scss';
-import {useEffect} from 'react';
 
 export const parameters = {
-  actions: {argTypesRegex: '^on[A-Z].*'},
+  actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
     matchers: {
       color: /(background|color)$/i,
