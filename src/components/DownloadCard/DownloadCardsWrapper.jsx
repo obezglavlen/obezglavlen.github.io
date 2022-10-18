@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const DownloadCardsWrapper = ({children}) => {
+const DownloadCardsWrapper = ({ children }) => {
   return (
     <section className="downloads__wrapper">
       {children}

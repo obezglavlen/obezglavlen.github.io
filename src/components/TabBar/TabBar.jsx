@@ -1,12 +1,12 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import TabBarItem from './TabBarItem';
 import './styles.scss';
 import useTabNavigation from '../../hooks/useTabNavigation';
-import {useLocation} from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
-const TabBar = ({items}) => {
-  const {selected, selectByPath, selectByIndex} = useTabNavigation(items);
+const TabBar = ({ items }) => {
+  const { selected, selectByPath, selectByIndex } = useTabNavigation(items);
   const location = useLocation();
 
 

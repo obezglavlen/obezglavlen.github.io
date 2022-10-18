@@ -3,7 +3,7 @@ import NavBarItem from './NavBarItem';
 import PropTypes from 'prop-types';
 import './styles.scss';
 
-const NavBar = ({items, direction, children}) => {
+const NavBar = ({ items, direction, children }) => {
   // TODO: maybe do slider tabs
   const renderItem = (item, index) => {
     return (
