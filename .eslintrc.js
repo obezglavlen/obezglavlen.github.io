@@ -21,6 +21,6 @@ module.exports = {
     'unused-default-export': 'off'
   },
   'globals': {
-    __DEV__: true
+    __DEV__: 'writable'
   }
 };

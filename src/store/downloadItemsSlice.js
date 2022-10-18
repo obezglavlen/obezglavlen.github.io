@@ -13,7 +13,7 @@ const downloadSlice = createSlice({
       state.current = { key: payload.key, index: payload.index };
     },
     clearCurrentItem: (state) => {
-      state.current = [null, null];
+      state.current = { key: null, index: null };
     }
   }
 });
