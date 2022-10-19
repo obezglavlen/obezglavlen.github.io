@@ -1,9 +1,9 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
-import downloadReducer, { __name } from './downloadItemsSlice';
+import downloadReducer from './downloadItemsSlice';
 
 const rootReducer = combineReducers(
   {
-    [__name]: downloadReducer
+    downloads: downloadReducer
   }
 );
 

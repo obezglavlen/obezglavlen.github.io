@@ -1,48 +1,66 @@
 {
   "minecraft": [
     {
-      "title": "Example title",
+      "title": "ResourcePack: Stay True",
       "description": "Proin hendrerit a sem efficitur sollicitudin. Aenean maximus enim enim, quis facilisis nunc placerat.",
-      "img": "https://via.placeholder.com/350/2A1430",
-      "externalUrl": "https://github.com/obezglavlen"
+      "img": "https://media.forgecdn.net/avatars/274/491/637258639542653246.png",
+      "externalUrl": "https://www.curseforge.com/minecraft/texture-packs/stay-true"
     },
     {
-      "title": "Example title 2",
+      "title": "ResourcePack: xali's Enchanted Books",
       "description": "Well! Pieces o' greed are forever shiny. Oh, ye mighty seashell- set sails for endurance! Ho-ho-ho! life of power.",
-      "img": "https://via.placeholder.com/350/2A1430",
-      "externalUrl": "https://github.com/obezglavlen"
+      "img": "https://media.forgecdn.net/avatars/377/691/637555914455642734.png",
+      "externalUrl": "https://www.curseforge.com/minecraft/texture-packs/xalis-enchanted-books"
     },
     {
-      "title": "Example title 3",
+      "title": "ResourcePack: Default Dark Mode",
       "description": "C-beam of a ship-wide collision course, handle the metamorphosis! Shields up, assimilation! Where is the collective girl?",
-      "img": "https://via.placeholder.com/350/2A1430",
-      "externalUrl": "https://github.com/obezglavlen"
+      "img": "https://media.forgecdn.net/avatars/587/601/637956774711753126.png",
+      "externalUrl": "https://www.curseforge.com/minecraft/texture-packs/default-dark-mode"
+    },
+    {
+      "title": "ResourcePack: Faithful 32x",
+      "description": "C-beam of a ship-wide collision course, handle the metamorphosis! Shields up, assimilation! Where is the collective girl?",
+      "img": "https://media.forgecdn.net/avatars/546/645/637882030837320187.png",
+      "externalUrl": "https://www.curseforge.com/minecraft/texture-packs/faithful-32x"
+    },
+    {
+      "title": "ResourcePack: Icons",
+      "description": "C-beam of a ship-wide collision course, handle the metamorphosis! Shields up, assimilation! Where is the collective girl?",
+      "img": "https://media.forgecdn.net/avatars/601/94/637979884134111667.png",
+      "externalUrl": "https://www.curseforge.com/minecraft/texture-packs/icons"
     }
   ],
   "windows": [
     {
-      "title": "Example title 1",
+      "title": "7zip",
       "description": "A falsis, nuclear vexatum iacere albus habena. Nunquam tractare victrix. Crescere semper ducunt ad raptus assimilatio.",
-      "img": "https://via.placeholder.com/350/2A1430",
-      "externalUrl": "https://github.com/obezglavlen"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/7zip_archive_icon.svg/1200px-7zip_archive_icon.svg.png",
+      "externalUrl": "https://www.7-zip.org/download.html"
     },
     {
-      "title": "Example title 2",
-      "description": "After crushing the gingers, decorate pumpkin seeds, lentils and white wine with it in a soup pot. Try grilling peanut butter mousse tossed with lime?",
-      "img": "https://via.placeholder.com/350/2A1430",
-      "externalUrl": "https://github.com/obezglavlen"
+      "title": "git",
+      "description": "A falsis, nuclear vexatum iacere albus habena. Nunquam tractare victrix. Crescere semper ducunt ad raptus assimilatio.",
+      "img": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+      "externalUrl": "https://git-scm.com/downloads"
     },
     {
-      "title": "Example title 3",
-      "description": "Furners stutter from yellow fevers like coal-black sons. Cold, big gulls roughly raid a dark, fine sun? All scallywags crush weird, stormy cannibals.",
-      "img": "https://via.placeholder.com/350/2A1430",
-      "externalUrl": "https://github.com/obezglavlen"
+      "title": "qBitTorrent",
+      "description": "A falsis, nuclear vexatum iacere albus habena. Nunquam tractare victrix. Crescere semper ducunt ad raptus assimilatio.",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/6/66/New_qBittorrent_Logo.svg",
+      "externalUrl": "https://www.qbittorrent.org/download.php"
     },
     {
-      "title": "Example title 4",
-      "description": "Bursa albus nuclear vexatum iacere est. Flavum, peritus domuss absolute aperto de fatalis, magnum vigil? Sainthood remembers when you invent with heaven.",
-      "img": "https://via.placeholder.com/350/2A1430",
-      "externalUrl": "https://github.com/obezglavlen"
+      "title": "PowerShell 7",
+      "description": "A falsis, nuclear vexatum iacere albus habena. Nunquam tractare victrix. Crescere semper ducunt ad raptus assimilatio.",
+      "img": "https://dirteam.com/dave/wp-content/uploads/sites/4/2020/10/PowerShell_Core_6.0_icon.png",
+      "externalUrl": "https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2#installing-the-msi-package"
+    },
+    {
+      "title": "Telegram",
+      "description": "A falsis, nuclear vexatum iacere albus habena. Nunquam tractare victrix. Crescere semper ducunt ad raptus assimilatio.",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/512px-Telegram_logo.svg.png",
+      "externalUrl": "https://desktop.telegram.org/"
     }
   ],
   "android": [

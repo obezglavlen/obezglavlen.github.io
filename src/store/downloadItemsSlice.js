@@ -34,5 +34,3 @@ export const {
 } = downloadSlice.actions;
 
 export { asyncFetch as fetchDownloads };
-
-export const __name = downloadSlice.name;
